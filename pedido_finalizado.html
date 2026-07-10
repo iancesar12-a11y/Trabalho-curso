@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<title>Pedido Confirmado</title>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<div class="logo">
+
+<span class="verde">Rincón</span>
+<span class="vermelho">Pizzas</span>
+
+</div>
+
+<div class="icone">
+🍕✅
+</div>
+
+<h2>Pedido Confirmado!</h2>
+
+<p>
+
+Obrigado por escolher a nossa pizzaria.
+
+<br><br>
+
+Recebemos seu pedido com sucesso.
+
+<br>
+
+Em breve entraremos em contato para confirmar as informações.
+
+</p>
+
+<div class="tempo">
+
+⏱ Tempo estimado de entrega:
+<strong>30 a 50 minutos</strong>
+
+</div>
+
+<button onclick="window.location.href='index.html'">
+
+🍕 Fazer outro pedido
+
+</button>
+
+</div>
+
+
+
+
+
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:whitesmoke;
+    font-family:'Poppins',sans-serif;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    height:100vh;
+
+}
+
+.card{
+
+    width:600px;
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:50px;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+
+.logo{
+
+    font-family:'Charmonman',cursive;
+    font-size:45px;
+    margin-bottom:20px;
+
+}
+
+.logo .verde{
+
+    color:#25722f;
+
+}
+
+.logo .vermelho{
+
+    color:rgb(223,0,0);
+
+}
+
+.icone{
+
+    font-size:80px;
+    margin-bottom:20px;
+
+}
+
+h2{
+
+    color:#25722f;
+    margin-bottom:20px;
+
+}
+
+p{
+
+    color:#555;
+    font-size:19px;
+    line-height:35px;
+
+}
+
+.tempo{
+
+    margin-top:30px;
+
+    background:#f5f5f5;
+
+    padding:18px;
+
+    border-radius:12px;
+
+    color:#25722f;
+
+    font-weight:bold;
+
+}
+
+button{
+
+    margin-top:40px;
+
+    width:260px;
+    height:55px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:rgb(223,0,0);
+
+    color:white;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:#b90000;
+
+    transform:scale(1.05);
+
+}
+
+@media (max-width: 768px){
+
+    body{
+        padding:20px;
+    }
+
+    .card{
+
+        width:100%;
+        padding:35px 25px;
+
+    }
+
+    .logo{
+
+        font-size:34px;
+
+    }
+
+    .icone{
+
+        font-size:60px;
+
+    }
+
+    h2{
+
+        font-size:28px;
+
+    }
+
+    p{
+
+        font-size:17px;
+        line-height:28px;
+
+    }
+
+    .tempo{
+
+        font-size:16px;
+        padding:15px;
+
+    }
+
+    button{
+
+        width:100%;
+        height:50px;
+        font-size:18px;
+
+    }
+
+}
+
+
+@media (max-width: 480px){
+
+    .card{
+
+        padding:25px 20px;
+
+    }
+
+    .logo{
+
+        font-size:28px;
+
+    }
+
+    .icone{
+
+        font-size:50px;
+
+    }
+
+    h2{
+
+        font-size:24px;
+
+    }
+
+    p{
+
+        font-size:15px;
+        line-height:24px;
+
+    }
+
+    .tempo{
+
+        font-size:15px;
+
+    }
+
+    button{
+
+        font-size:16px;
+        height:45px;
+
+    }
+
+}
+
+</style>
+
+</body>
+</html>

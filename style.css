@@ -1,0 +1,618 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: whitesmoke;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*MENU DE NAVEGAÇÃO*/
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: whitesmoke;
+    z-index: 10000;
+    height: 100px;
+}
+nav h1{
+    margin-top: auto;
+    font-size: 50px;
+    font-family:'Charmonman';
+}
+nav a{
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+}
+#produto,
+#depoimentos,
+#contato{
+    scroll-margin-top: 120px;
+}
+/*Hover do nav*/
+.rinconpizzas{
+    display: inline-block;
+}
+
+.rinconpizzas span{
+    transition: 0.4s;
+}
+
+.rinconpizzas:hover .verde,
+.rinconpizzas:hover .vermelho{
+    color: red;
+}
+nav p:hover{
+    color:red;
+}
+.verde{
+    color: #25722f;
+}
+
+.vermelho{
+    color: rgb(223, 0, 0);
+}
+nav p{
+    margin-top: 35px;
+    font-size: 28px;
+    transition: 0.4s;
+    font-family:'Charmonman';
+}
+
+/*IMAGENS E TEXTOS E BOTÕES DO MAIN*/
+.section1{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    padding: 50px;
+    min-height: 100vh;
+}
+.section1 h1{
+    font-size: 120px;
+    font-family: 'Antonio';
+}
+.descricao-main{
+    color: rgba(255,255,255,0.9);
+    font-size: 18px;
+    font-family: 'Poppins';
+    max-width: 700px;
+}
+.section1 button{
+    width: 250px;
+    height: 60px;
+    border-radius: 15px;
+    font-size: 30px;
+    font-family: 'Anton';
+}
+.sombra{
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(
+        to right,
+        rgba(0,0,0,0.75),
+        rgba(0,0,0,0.55),
+        rgba(0,0,0,0.35),
+        rgba(0,0,0,0.15)
+
+    );
+
+    z-index: 1;
+}
+.video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    border-radius: 8px;
+}
+.melhor{
+    color: rgb(243, 0, 0);
+}
+.regiao{
+    color: #25722f;
+}
+.pedido{
+    border: red solid;
+    background-color: red;
+    color: white;
+}
+.fale{
+    border: whitesmoke solid;
+    background-color: whitesmoke;
+    color: black;
+}
+.texto-botoes{
+    display: flex;
+    flex-direction: column;
+    margin-top: -200px;
+    gap: 30px;
+    align-items: flex-start;
+    padding: 80px;
+    z-index: 2;
+}
+.texto-botoes h1 {
+    color: whitesmoke;
+}
+.button-main{
+    display: flex;
+    gap: 40px;
+}
+/*Hover botões*/
+
+.pedido,
+.fale{
+    transition: 0.4s;
+}
+.pedido:hover,
+.fale:hover{
+    transform: scale(1.05);
+    box-shadow: 4px 4px 12px black;
+}
+.section2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    background-color: whitesmoke;
+}
+
+.texto-central{
+    width: 100%;
+    font-family: 'Charmonman';
+    font-size: 50px;
+    text-align: center;
+}
+.p{
+ width: 100%;
+ font-family:'Cherry Swash' ;
+ font-size: 30px;
+ text-align: center;
+}
+.amor{
+    color: red;
+}
+.nosso{
+    color: #25722f;
+}
+
+.cardapio{
+    color:rgb(223, 0, 0);;
+}
+
+.card1,
+.card2,
+.card3,
+.card4,
+.card5{
+    width: 280px;
+    height: 390px;
+    background-color: white;
+    border: solid rgb(170, 170, 170) 1px;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+    overflow: hidden;
+    transition: 0.5s;
+    position: relative;
+     min-width: 280px;
+   
+}
+
+.card1:hover,
+.card2:hover,
+.card3:hover,
+.card4:hover,
+.card5:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.card1 img,
+.card2 img,
+.card3 img,
+.card4 img,
+.card5 img{
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+.imagem-card{
+    position: relative;
+}
+.selo-gluten{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    background: #1d5a3d;
+    color: white;
+
+    padding: 6px 12px;
+    border-radius: 30px;
+
+    font-family: 'Poppins';
+    font-size: 12px;
+    font-weight: 600;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+.selo-gluten i{
+    font-size: 18px;
+}
+.card1 h2,
+.card2 h2,
+.card3 h2,
+.card4 h2,
+.card5 h2{
+    margin-top: 5px;
+    font-size: 23px;
+    color: black;
+    font-family: 'Poppins';
+    text-align: center;
+}
+.card1 p,
+.card2 p,
+.card3 p,
+.card4 p,
+.card5 p{
+    font-size: 15px;
+    color: black;
+    padding: 0 10px;
+    font-family: 'Roboto';
+    height: 60px;
+    
+}
+.valor1,
+.valor2,
+.valor3,
+.valor4,
+.valor5{
+    font-size: 55px;
+    margin: 10 0px;
+    font-family: 'Chenla';
+    text-align: center;
+}
+.compra1 button,
+.compra2 button,
+.compra3 button,
+.compra4 button,
+.compra5 button{
+    background-color: #1d5a3d;
+    color: white;
+    border: none;
+    padding: 8px 25px;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'Red Rose';
+}
+
+.compra1 button:hover,
+.compra2 button:hover,
+.compra3 button:hover,
+.compra4 button:hover,
+.compra5 button:hover{
+    background-color: #14412c;
+    transform: scale(1.05);
+}
+
+.container-cards{
+   display: flex;
+    gap: 20px;
+    overflow-x: hidden;
+    width: 900px;
+    scroll-behavior: smooth;
+}
+
+.seta{
+    border: none;
+    background: transparent;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.compra1,
+.compra2,
+.compra3,
+.compra4,
+.compra5{
+    text-align: center;
+}
+/*Section 3 / Footer*/
+.section3{
+    min-height: 100vh;
+}
+.clientes{
+    font-family: "Antonio";
+    text-align: center;
+    font-size: 90px;
+    margin-top: 150px;
+}
+.avaliaçoes-icone{
+    margin-top: 40px;
+    text-align: center;
+}
+.fa-google{
+    font-size: 30px;
+    color: #EA4335;
+}
+.avaliaçoes{
+    font-family: "Antonio";
+    font-size: 30px;
+}
+
+.banner-area{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* BANNER NORMAL */
+.banner{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    display: block;
+}
+
+/* ===== DEPOIMENTOS (CORREÇÃO FINAL) ===== */
+.card-avaliaçao{
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    transform: translateX(-50%);
+    
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+    width: 100%;
+    z-index: 5;
+}
+
+.card-1,
+.card-2,
+.card-3{
+    width: 500px;
+    height: 180px;
+    background-color: white;
+    border-radius: 20px;
+    margin: 18px;
+    transition: 0.4s;
+    
+}
+.card-1 p,
+.card-2 p,
+.card-3 p{
+    margin-left: 15px;
+    margin-top: 10px;
+    font-family: "Antonio";
+    font-size: 20px;
+}
+.card-1:hover,
+.card-2:hover,
+.card-3:hover{
+    transform: translateY(-10px);
+    box-shadow: 2px 2px 5px black;
+}
+.footer-final{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    margin-top: 300px; /* desce o bloco */
+}
+
+.footer-esquerda h1{
+    font-family: "Antonio";
+    font-size: 70px;
+}
+
+.footer-esquerda p{
+    font-family: "Poppins";
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.redes{
+    display: flex;
+    gap: 20px;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.redes i{
+    color: black;
+}
+
+.footer-direita h2{
+    font-family: "Antonio";
+    font-size: 40px;
+}
+
+.footer-direita p{
+    font-family: "Poppins";
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.copyright{
+    text-align: center;
+    margin-top: 40px;
+    padding-bottom: 20px;
+    font-family: "Poppins";
+}
+
+.copyright p:first-child{
+    font-size: 18px;
+}
+
+.copyright p:last-child{
+    font-size: 14px;
+}
+
+@media (max-width: 768px){
+
+    nav{
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px;
+    }
+
+    nav p{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .rinconpizzas{
+        width: 100%;
+        text-align: center;
+        font-size: 35px;
+        order: -1;
+    }
+
+    .texto-botoes{
+        padding: 20px;
+        margin-top: 0;
+    }
+
+    .texto-main{
+        font-size: 67px !important;
+        line-height: 1;
+    }
+
+    .descricao-main{
+        font-size: 16px;
+    }
+
+    .button-main{
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .pedido,
+    .fale{
+        width: 90%;
+        max-width: 290px;
+    }
+
+    .texto-central{
+        font-size: 40px;
+    }
+
+    .p{
+        font-size: 24px;
+    }
+
+    .container-cards{
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 20px;
+        padding: 20px;
+    
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+    }
+
+    .container-cards::-webkit-scrollbar{
+        display: none;
+    }
+
+    .card1,
+    .card2,
+    .card3,
+    .card4,
+    .card5{
+        flex: 0 0 280px;
+        scroll-snap-align: start;
+    }
+
+    .clientes{
+        font-size: 50px;
+    }
+
+    .banner{
+        height: 300px;
+    }
+
+    .banner-area{
+        position: relative;
+    }
+
+    .card-avaliaçao{
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        transform: none;
+    
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    
+        width: 100%;
+        padding: 10px;
+    
+        -webkit-overflow-scrolling: touch;
+
+        scroll-snap-type: x mandatory;
+        overflow-x: auto;
+        justify-content: flex-start;
+
+        scroll-padding-left: 20px;
+        padding-left: 20px;
+        scroll-snap-align: start;
+
+        touch-action: pan-x;
+    }
+
+    .card-avaliaçao::-webkit-scrollbar{
+        display: none;
+    }
+
+    .card-1,
+    .card-2,
+    .card-3{
+        flex: 0 0 80%;
+        scroll-snap-align: start;
+    }
+
+    .seta{
+        display:none;
+    }
+
+    .footer-final{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+        margin-top: 150px;
+    }
+
+    .redes{
+        justify-content: center;
+    }
+}

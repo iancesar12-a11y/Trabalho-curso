@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 30px;
+    color: white;
+}
+body{
+    margin-top: 60px;
+    text-align: center;
+    background-color: #1b5322;
+}
+.container-php{
+    background-color: white;
+    padding: 20px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 467px; /*controla a largura */
+    height: 400px;
+    margin: 0 auto; /*centraliza na tela */
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.campo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 5px 10px;
+    width: 300px;/* controla largura do bloco */
+}
+
+.campo label {
+    font-family: 'Poppins', sans-serif;
+    min-width: 90px; /*controla distância do texto */
+    text-align: left; /*cola na esquerda */
+    margin-right: 5px;
+}
+
+.campo input {
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    outline: none; /*remove borda ao clicar */
+    background: transparent; /*remove fundo */
+    flex: 1; /*ocupa o resto do espaço */
+}
+button{
+    margin-top: 30px;
+    background-color: #ff1a1a;
+    border: transparent;
+    font-family: 'Poppins';
+    width: 150px;
+    height: 35px;
+    border-radius: 5px;
+    color: white;
+}
