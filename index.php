@@ -27,7 +27,7 @@ required>
 
 <div class="campo">
 <label>Telefone:</label>
-<input type="text"
+<input type="password"
 name="telefone"
 placeholder="Digite seu Telefone"
 required>
@@ -35,7 +35,7 @@ required>
 
 <div class="campo">
 <label>CPF:</label>
-<input type="text"
+<input type="password"
 name="cpf"
 placeholder="Digite seu CPF"
 required>
